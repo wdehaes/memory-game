@@ -1,0 +1,7 @@
+<div class="card" (click)="flip()" [class.flipped]="flipped">
+	<figure class="front">1</figure>
+	<figure class="back">
+		<img [src]="memory.image" alt="">
+		<p>{{memory.text}}</p>
+	</figure>
+</div>
