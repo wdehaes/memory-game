@@ -1,5 +1,6 @@
 export enum States {
   HIDDEN,
   ACTIVE,
-  FOUND
+  FOUND,
+  HIDING
 }

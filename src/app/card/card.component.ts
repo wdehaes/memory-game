@@ -11,8 +11,7 @@ import { States } from '../models/states.enum';
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
-  styleUrls: ['./card.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  styleUrls: ['./card.component.scss']
 })
 export class CardComponent implements OnInit {
   @Input() memory: Memory;

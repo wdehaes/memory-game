@@ -5,6 +5,9 @@
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  border-radius: 10%;
+  border: 1px solid gray;
+  box-shadow: 1px 1px 3px #888;
 }
 
 .card {
@@ -19,10 +22,36 @@
   background: red;
 }
 .card .back {
-  background: blue;
+  background: white;
   transform: rotateY( 180deg );
 }
 
 .card.flipped {
   transform: rotateY( 180deg );
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  height: 80%;
+  max-width: 100%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

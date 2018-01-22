@@ -1,12 +1,21 @@
 .container {
-  width: 8vw;
-  height: 14vw;
+  width: 9vw;
+  height: 19vh;
   position: relative;
   perspective: 40vw;
-  margin: 1vw;
+  margin: 0.5vh;
 }
-
+.card-wrapper {
+  width: 100%;
+  height: 100%;
+  background: white;
+}
 .wrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+.message {
+  color: white;
 }

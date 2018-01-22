@@ -1,8 +1,10 @@
 <div class='wrapper'>
   <div class="container" *ngFor="let memory of memories">
-    <app-card
-    [memory]="memory"
-    (flipper)="checkFlip($event)"></app-card>
-  </div>
+    <div class="card-wrapper">
+      <app-card [memory]="memory" (flipper)="checkFlip($event)"></app-card>
+    </div>
+    </div>
 </div>
+
+<app-overlay *ngIf="!started || finished" [started]="started" (close)="close()"></app-overlay>
 

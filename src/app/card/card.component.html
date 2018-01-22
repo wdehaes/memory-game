@@ -1,7 +1,13 @@
 <div class="card" (click)="flip()" [class.flipped]="flipped">
-	<figure class="front">1</figure>
+	<figure class="front"></figure>
 	<figure class="back">
-		<img [src]="memory.image" alt="">
-		<p>{{memory.text}}</p>
+    <div class="content">
+      <div class="image">
+        <img [src]="memory.image" alt="">
+      </div>
+      <div class="text">
+        <p>{{memory.text}}</p>
+      </div>
+    </div>
 	</figure>
 </div>
